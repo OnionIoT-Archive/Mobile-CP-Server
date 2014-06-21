@@ -32,7 +32,6 @@ realtime.init(httpsServer);
 //====================
 
 // Configure the express server
-httpsExpressServer.use('/', express.static(__dirname + '/www'));
 httpsExpressServer.use(connect.cookieParser());
 httpsExpressServer.use(connect.session({secret: 'OnionSessionQly71fRMT3e6igqZ'}));
 
@@ -50,12 +49,12 @@ httpsExpressServer.get('/app/register', function (req, res) {
 });
 
 // TESTING ONLY!!
-httpsExpressServer.get('/ap', function (req, res) {
+/*httpsExpressServer.get('/ap', function (req, res) {
     res.end();
 });
 httpsExpressServer.post('/ap', function (req, res) {
     res.end();
-});
+});*/
 
 httpsExpressServer.get('/device/:appId', function (req, res) {
     var appId = req.params.appId;
