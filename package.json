@@ -1,0 +1,23 @@
+{
+  "name": "remote-control",
+  "version": "0.0.1",
+  "description": "Remote control for the WiFi switch.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.onion.io:mobile-apps/remote-control.git"
+  },
+  "author": "Onion Corporation",
+  "license": "Proprietary",
+  "dependencies": {
+    "express": "^4.4.1",
+    "socket.io": "^1.0.4",
+    "mysql": "^2.3.2",
+    "connect": "^2.19.5",
+    "node-uuid": "^1.4.1"
+  }
+}
